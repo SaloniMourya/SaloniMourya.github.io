@@ -287,10 +287,13 @@ section {
   flex-direction: column;
 }
 
-.about-containers,
-.about-details-container {
+.about-containers{
   display: flex;
 }
+
+/* .about-details-container{
+  display: flex;
+} */
 
 .about-pic {
   border-radius: 2rem;
