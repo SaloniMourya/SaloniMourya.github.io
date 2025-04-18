@@ -87,10 +87,10 @@
           
           <div class="col-lg-12">
             <div class="portfolio-info">
-              <h3>Frailty Prediction Model</h3>
+              <h3>Time-Series Gait Analysis for Early Intervention in Senior Living</h3>
               <ul>
                 <li><strong>Category</strong>: Machine Learning (Time series analysis)</li>
-                <li><strong>Client</strong>: Arizona State University (Research Aide)</li>
+                <li><strong>Client</strong>: Arizona State University (Research)</li>
                 <!-- <li><strong>Project date</strong>: 4 June, 2024</li> -->
                 <!-- <li><strong>Project URL</strong>: <a href="https://github.com/SaloniMourya/ML-Based-CLV-Predictive-Analytics" title="More Details" target="_blank">ML-Based-CLV-Predictive-Analytics</a></li> -->
                  </ul>
@@ -99,24 +99,12 @@
             <div class="portfolio-description">
               <h2>Summary</h2>
                <p align="justify">
-                  This project focuses analyzing movement patterns from in-room sensors to evaluate frailty indicators in older adults.<br><br>
-                  
-                  <b>Dataset and Approach : </b><br>
-                  - Sensor data had 150K time-series records per patient capturing segment-based motion activity.<br>
-                  - Clinical Frailty Assessment data had Frailty Phenotype Score (categorical/ordinal) and CGA_FI (continuous index).<br>
-                  - Created daily patient-level summaries by engineering features such as Duration of motion, distance walked, calculated velocity.<br>
-                  - Percentile-based thresholds (P50–P95) for velocity-based filtering.<br>
-                  - Cleaned and aligned sensor data with clinical records, removing incomplete days and outlier patients for consistency.<br><br>
-                  
-                  <b>Modeling Approach :</b><br>
-                  - Exploratory Data Analysis (EDA): Correlation matrices and visualizations to assess relationships between sensor-derived features and frailty scores.<br>
-                  - Clustering (K-Means): Identified patient mobility profiles and grouped them to analyze frailty distribution across clusters.<br>
-                  - Regression Models: Multiple Linear Regression (OLS) to assess continuous CGA_FI prediction—no significant predictors found.<br>
-                  - Logistic Regression for binary frailty classification: Explored both phenotype and CGA-based labels.<br>
-                  - Evaluated default, balanced, and threshold-tuned models.<br>
-                  - Achieved up to 84% classification accuracy using precision-recall tuning.<br>
-                  - Visualization & Interpretation: Scatter plots, ROC curves, and precision-recall curves for explainability and model evaluation.<br><br>  
-            </div>
+                  - Developed Python-based pipelines to analyze large time-series datasets from room sensors, generating resident-level mobility features 
+                    such as duration, distance travelled, and gait velocity.<br> 
+                  - Integrated sensor-derived movement metrics with health-related indicators to enable multimodal analysis using correlation matrices, 
+                    K-Means clustering, and regression modeling (linear and logistic). <br> 
+                  - Achieved 84% classification accuracy in predicting mobility risk levels using threshold-tuned logistic regression, to address class 
+                    imbalance challenges across a limited sample size. <br> 
           </div>
         </div>
       </div>
